@@ -1,0 +1,122 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Reset and dependencies
+@import "normalize.less";
+@import "print.less";
+@import "glyphicons.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+@import "component-animations.less";
+@import "dropdowns.less";
+@import "button-groups.less";
+@import "input-groups.less";
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+@import "labels.less";
+@import "badges.less";
+@import "jumbotron.less";
+@import "thumbnails.less";
+@import "alerts.less";
+@import "progress-bars.less";
+@import "media.less";
+@import "list-group.less";
+@import "panels.less";
+@import "responsive-embed.less";
+@import "wells.less";
+@import "close.less";
+
+// Components w/ JavaScript
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+@import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+
+/*Custom styles*/
+body {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    background-color: #122938;
+    color: white;
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+// colors
+@navy-blue: #122938;
+@navy-blue-tint: rgba(18, 41, 56, 0.7);
+@gray: #706F6F;
+
+// Common
+a {
+    .transition(all .2s ease-out);
+}
+
+section {
+    
+    height: 100vh;
+}
+
+// Menu
+#menu {
+    background-color: @navy-blue-tint;
+    border-style: none;
+    
+    a {
+        color: white;
+    }
+    
+    .navbar-nav>li>a {
+        &:focus, &:hover {
+            background-color: white;
+            opacity: 0.7;
+            color: @navy-blue;
+        }
+    }
+}
+
+// Home
+#home {
+    background: linear-gradient(rgba(18, 41, 56, 0.7), rgba(18, 41, 56, 0.7)), url("../images/bg_1.jpg") no-repeat center center fixed;
+    
+}
+
+// About
+
+// Offer
+
+// Partners
+
+// Clients
+
+// Team
+
+// Contact
+
+// Footer
+
+
