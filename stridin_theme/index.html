@@ -8,16 +8,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Stridin - Stride in energy</title>
 
-    <!-- Bootstrap -->
+    <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-    <!-- CSS -->
-    <link href="css/jquery.fullPage.css" rel="stylesheet">
-
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +36,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home">STRIDIN</a>
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo.png"/>
+                    
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,13 +62,14 @@
         <!--Home-->
 
         <section id="home" class="section">
-
+            <img class="img-responsive" src="images/logo_retina.png"/>
         </section>
 
         <!--O firmie-->
 
         <section id="about" class="section">
             <h1>O firmie</h1>
+            <div class=""></div>
         </section>
 
         <!--Oferta-->
@@ -112,6 +112,8 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage();
