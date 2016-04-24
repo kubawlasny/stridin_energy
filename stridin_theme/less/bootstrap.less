@@ -70,6 +70,7 @@ body {
 @navy-blue: #122938;
 @navy-blue-tint: rgba(18, 41, 56, 0.7);
 @gray: #706F6F;
+@white-tint: rgba(255, 255, 255, 0.7);
 
 // Common
 a {
@@ -91,10 +92,14 @@ section {
     }
     
     .navbar-nav>li>a {
-        &:focus, &:hover {
+        /*&:focus,*/ &:hover {
             background-color: white;
             color: @navy-blue;
         }
+    }
+    .navbar-nav>li.active>a  {
+        background-color: white;
+        color: @navy-blue;
     }
     .navbar-brand>img {
         height: 100%;
@@ -102,7 +107,7 @@ section {
 }
 
 // Home
-#home {
+#home_section {
     background: linear-gradient(rgba(18, 41, 56, 0.7), rgba(18, 41, 56, 0.7)), url("../images/bg_1.jpg") no-repeat center center fixed;
     
     img {
