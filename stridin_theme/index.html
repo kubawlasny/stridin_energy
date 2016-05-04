@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content=" "/>
+    <meta name="description" content=" " />
     <title>Stridin - Stride in energy</title>
 
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <!-- Fonts -->
     <!--<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>-->
@@ -28,16 +30,15 @@
 </head>
 
 <body>
+    
     <!--Navbar-->
+    
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
                     <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#home">
                     <img src="images/logo.png" />
@@ -59,41 +60,63 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    
 
+   <!--fullPage.js sections-->
+   
     <div id="fullpage">
+       
         <!--Home-->
+       
         <section id="home_section" class="section" data-anchor="home">
-            <img class="img-responsive" src="images/logo_retina.png" />
+           <div class="container">
+               <div class="row logo">
+                   <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                       <img class="img-responsive" src="images/logo_retina.png" />
+                   </div>
+               </div>
+               <div class="row tag">
+                   <div class="col-md-8 col-md-offset-2">
+                       <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quia!</h1>
+                   </div>
+               </div>
+               <span class="seeMore"></span>
+           </div>
         </section>
 
+        
         <!--O firmie-->
+        
         <section id="about_section" class="section" data-anchor="about">
             <div class="container">
+               
+                <!--About section header-->
                 <div class="row">
                     <header>
                         <h1>O firmie</h1>
-                        <div class=""></div>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
                     </header>
                 </div>
 
-                <div class="row">
-                    <div class="about-sign img-responsive col-sm-5">
-                        <img src="images/stridin_sign.png" alt="Stridin Sign">
+                <!--About section content-->
+                <div class="row content">
+                    <div class="about-sign img-responsive col-sm-12 col-md-5">
+                        <img src="images/stridin_sign_white.png" alt="Stridin Sign">
                     </div>
-                    <div class="about-content col-sm-7">
+                    <div class="about-content col-sm-12 col-md-6 col-md-offset-0">
                         Jesteśmy prężnie rozwijającą się firmą doradczą z Poznania. Świadczymy usługi w zakresie doradztwa energetycznego dla klienta biznesowego. Dzięki proponowanym przez nas rozwiązaniom, pomagamy zredukować zużycie oraz koszty energii elektrycznej i gazu ziemnego.
                         <br>
                         <br>
-                          Nasze doświadczenie w branży energetycznej oraz finansowej przekłada się na pełen profesjonalizm oferowanych przez nas usług. Relacje, które budujemy są długoterminowe i opierają się na wzajemnym zaufaniu. Proponowane przez nas rozwiązania, oparte na aktualnych możliwościach dostępnych na rynku, dostosowujemy do bieżących potrzeb Klienta. Naszą pracą przyczyniamy się do sukcesu współpracujących z nami przedsiębiorstw i wsparcia innowacyjności polskiego rynku energetycznego.
-
+                        Nasze doświadczenie w branży energetycznej oraz finansowej przekłada się na pełen profesjonalizm oferowanych przez nas usług. Relacje, które budujemy są długoterminowe i opierają się na wzajemnym zaufaniu. Proponowane przez nas rozwiązania, oparte na aktualnych możliwościach dostępnych na rynku, dostosowujemy do bieżących potrzeb Klienta. Naszą pracą przyczyniamy się do sukcesu współpracujących z nami przedsiębiorstw i wsparcia innowacyjności polskiego rynku energetycznego.
                     </div>
                 </div>
             </div>
 
         </section>
 
+        
         <!--Oferta-->
+        
         <section id="offer_section" class="section" data-anchor="offer">
             <div class="container">
                 <div class="row">
@@ -113,17 +136,17 @@
                         <h4>Optymalizację taryf energetycznych i ich dopasowanie do potrzeb Klienta</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
                     </div>
-                    <div class="icon-box col-md-4 col-sm-6"> 
-                       <i class="ion-social-buffer"></i>
+                    <div class="icon-box col-md-4 col-sm-6">
+                        <i class="ion-social-buffer"></i>
                         <h4>Profesjonalną obsługę administracyjno-prawną projektów</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
                     </div>
-                    <div class="icon-box col-md-4 col-sm-6"> 
+                    <div class="icon-box col-md-4 col-sm-6">
                         <i class="ion-arrow-graph-up-right"></i>
                         <h4>Wdrażanie innowacyjnych technologii</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-4 col-sm-6"> 
+                    </div>
+                    <div class="icon-box col-md-4 col-sm-6">
                         <i class="ion-document-text"></i>
                         <h4>Pomoc w przygotowywaniu wniosków o dotacje z Funduszy Europejskich</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
@@ -136,95 +159,270 @@
                 </div>
             </div>
         </section>
+        
 
         <!--Partnerzy-->
+        
         <section id="partners_section" class="section" data-anchor="partners">
             <div class="container">
+                
+                <!--Partners section header-->
                 <div class="row">
                     <header>
                         <h1>Partnerzy</h1>
                         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
                     </header>
                 </div>
+                
+                <!--Partners section content-->
                 <div class="row icon-boxes">
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
-                        <h4>Nazwa firmy</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample-2.png" alt="">
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
                     </div>
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample-2.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
+                    </div>
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
+                    </div>
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
+                    </div>
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
+                    </div>
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
-                    <div class="icon-box col-md-3">
-                        <img src="images/logo-sample.png" alt="">
+                    </div>
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
                         <h4>Nazwa firmy</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
-                    </div> 
+                    </div>
+                    <div class="icon-box col-md-3 col-sm-6">
+                        <img class="img-responsive" src="images/logo-sample.png" alt="">
+                        <h4>Nazwa firmy</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+
         <!--Klienci-->
+
         <section id="clients_section" class="section" data-anchor="clients">
-            <h1>Klienci</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
+            <div class="container">
+
+                <!--Clients section header-->
+                <div class="row">
+                    <header>
+                        <h1>Klienci</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
+                    </header>
+                </div>
+
+                <!--Clients carousel-->
+                <div class="row clients-carousel">
+                    <div class="element">
+                        <img src="images/logo-sample.png" class="img-responsive" alt="">
+                        <h4>Nazwa firmy</h4>
+                        <h4>Wykonane usługi</h4>
+                        <ul>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                        </ul>
+                        <h4>Opinia</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
+                    </div>
+                    <div class="element">
+                        <img src="images/logo-sample-2.png" class="img-responsive" alt="">
+                        <h4>Nazwa firmy</h4>
+                        <h4>Wykonane usługi</h4>
+                        <ul>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                        </ul>
+                        <h4>Opinia</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
+                    </div>
+                    <div class="element">
+                        <img src="images/logo-sample.png" class="img-responsive" alt="">
+                        <h4>Nazwa firmy</h4>
+                        <h4>Wykonane usługi</h4>
+                        <ul>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
+                    </div>
+                    <div class="element">
+                        <img src="images/logo-sample-2.png" class="img-responsive" alt="">
+                        <h4>Nazwa firmy</h4>
+                        <h4>Wykonane usługi</h4>
+                        <ul>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                            <li>Tekst</li>
+                        </ul>
+                        <h4>Opinia</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam amet sequi optio at, soluta.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!--Team-->
+
+        <!-- Team -->
+
         <section id="team_section" class="section" data-anchor="team">
-            <h1>Zespół</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
+            <div class="container-fluid">
+                
+                <!--Contact section header-->
+                <div class="row">
+                    <header>
+                        <h1>Zespół</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
+                    </header>
+                </div>
+                
+                <!--Team section content-->
+                <div class="row">
+                    <div class="team-member col-sm-6 col-md-2 col-md-offset-1">
+                        <img class="img-responsive" src="images/business_photo_sample.jpg" alt="">
+                        <h4>Jan Kowalski</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque impedit ipsa suscipit commodi quos blanditiis magni. Voluptates voluptate dolorum sit. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="team-member col-sm-6 col-md-2">
+                        <img class="img-responsive" src="images/business_photo_sample.jpg" alt="">
+                        <h4>Jan Kowalski</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iste dolore magnam, eveniet illo eligendi beatae amet quae, provident quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>                    
+                    <div class="team-member col-sm-6 col-md-2">
+                        <img class="img-responsive" src="images/business_photo_sample.jpg" alt="">
+                        <h4>Jan Kowalski</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae repellat autem, blanditiis inventore nam at, laboriosam harum quam necessitatibus commodi. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>                    
+                    <div class="team-member col-sm-6 col-md-2">
+                        <img class="img-responsive" src="images/business_photo_sample.jpg" alt="">
+                        <h4>Jan Kowalski</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sequi maiores animi id impedit expedita, quisquam sed quaerat culpa. Nihil. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>                    
+                    <div class="team-member col-sm-6 col-md-2">
+                        <img class="img-responsive" src="images/business_photo_sample.jpg" alt="">
+                        <h4>Jan Kowalski</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates a laborum, sunt ex quas tempore reiciendis officiis temporibus, eaque iste! Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!--Kontakt-->
+
+        <!-- Kontakt -->
+
         <section id="contact_section" class="section" data-anchor="contact">
-            <h1>Kontakt</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
+            <div class="container">
+
+                <!--Contact section header-->
+                <div class="row">
+                    <header>
+                        <h1>Kontakt</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in sapien leo.</h4>
+                    </header>
+                </div>
+
+                <!--Contact section content-->
+                <div class="row content">
+                    <div class="col-md-4">
+                        <h3>STRIDIN.ENERGY</h3>
+                        <h4>
+                            JKW s.c.<br>
+                            os. Działyńskiego 100<br>
+                            62-020 Swarzędz
+                        </h4>
+                        <h3>Numer telefonu</h3>
+                        <h4>505 505 050</h4>
+                        <h3>Email</h3>
+                        <h4>kontakt@stridin.energy</h4>
+                    </div>
+                    <div class="col-md-7 col-md-offset-1 contact-form">
+                        <h3>Formularz kontaktowy</h3>
+
+                        <form>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <label for="contact-name">Imię*</label>
+                                <input type="text" class="form-control" id="contact-name" placeholder="Wpisz swoje imię">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <label for="contact-lastname">Nazwisko</label>
+                                <input type="text" class="form-control" id="contact-lastname" placeholder="Wpisz swoje nazwisko (opcjonalne)">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <label for="contact-email">Email address*</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="Wpisz swój adres email">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <label for="contact-number">Numer telefonu</label>
+                                <input type="tel" class="form-control" id="contact-number" placeholder="Wpisz swój numer telefonu (opcjonalne)">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="contact-message">Treść wiadomości*</label>
+                                <textarea class="form-control" id="contact-message" rows="5"></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="contact-submit" class="btn">Wyślij</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!--Credits-->
+                <div class="row credits">
+                    <div class="col-xs-6 col-md-3 text-left">
+                        &copy; STRIDIN.ENERGY 2016
+                    </div>
+                    <div class="col-xs-6 col-md-offset-6 col-md-3 text-right">
+                        Wykonanie: <a href="http://wlasny.pl">Jakub Własny</a>
+                    </div>
+                </div>
+                
+            </div>
         </section>
-
-
     </div>
-    <!--Stopka-->
-    <!--        <section id="footer" class="">
-
-        </section>-->
-
-
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins -->
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Custom scripts -->
     <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
