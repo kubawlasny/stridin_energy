@@ -130,7 +130,7 @@
         // Menu
         #menu {
             font-size: 14px;
-            background-color: rgba(18, 41, 56, 0.5);
+            background-color: @navy-blue-tint;
             border-style: none;
             a {
                 color: white;
@@ -163,6 +163,9 @@
                 margin-bottom: 3vh;
             }
             .tag {
+                h1 {
+                    font-size: 50px;
+                }
                 @media @xs-only {
                     h1 {
                         font-size: 26px;
@@ -251,6 +254,7 @@
                     padding: 20px 0;
                 }
                 p {
+                    //padding: 0 20px;
                     text-align: justify;
                     //color: @gray;
                 }
@@ -294,14 +298,24 @@
             background-size: cover;
             background-position: center bottom;
             .element {
+                text-align: justify;
                 background: rgba(18, 41, 56, 0.4);
                 margin: 2vh 2vw;
+                padding: 10px;
                 img {
                     margin: 20px auto;
                     width: 300px;
                 }
                 @media @desktop {
                     width: 33vw;
+                }
+                h4:after {
+                    display: block;
+                    height: 3px;
+                    background-color: @gray;
+                    content: " ";
+                    width: 50px;
+                    margin: 15px auto;
                 }
             }
             .clients-carousel {
