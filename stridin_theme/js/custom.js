@@ -3,13 +3,13 @@
 $(document).ready(function () {
     $('#fullpage').fullpage({
         menu: '#menu',
-        anchors: ['home', 'about', 'offer', 'partners', 'clients', 'team', 'contact'],
+        anchors: ['home', 'about', 'offer', 'partners', /*'clients',*/ 'team', 'contact'],
         scrollingSpeed: 900,
         //responsiveWidth: 768,
         //autoScrolling:false,
         scrollOverflow: true,
         navigation: true,
-        navigationTooltips: ['Home', 'O firmie', 'Oferta', 'Partnerzy', 'Klienci', 'Zespół', 'Kontakt'],
+        navigationTooltips: ['Home', 'O firmie', 'Oferta', 'Partnerzy', /*'Klienci',*/ 'Zespół', 'Kontakt'],
         
         //Design
         verticalCentered: false,
